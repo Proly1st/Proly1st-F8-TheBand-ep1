@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="main">
-        <!-- begin nav -->
+        <!-- Begin nav -->
         <div id="header">
             <ul id="nav">
                 <li><a href="">Home</a></li>
@@ -35,14 +35,14 @@
             </div>
             <!-- end serach header -->
         </div>
-       
+        <!-- Slider -->
         <div id="slider">
                 <div class="text-content">
                     <h2 class="text-heading">Chicago</h2>
                     <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
                 </div>
         </div>
-
+        <!-- Content -->
         <div id="content">
             <div class="content-session">
                 <h2 class="session-heading">THE BAND</h2>
@@ -56,17 +56,17 @@
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
 
-                     <div class="member-item">
+                     <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
                      </div>
-                     <div class="member-item">
+                     <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
@@ -74,7 +74,7 @@
                 </div>
                  
             </div>
-            <!-- tour secsion -->
+            <!-- Tour secsion -->
             <div class="tour-section ">
                 <div class="content-session">
                     <h2 class="session-heading text-white">TOUR DATES</h2>
@@ -88,34 +88,38 @@
                     </ul>
 
                     <!--Places -->
-                    <div class="place-list">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <div class="col col-third place-item">
                             <img src="./assets/img/places/newyork.jpg" alt="newyork" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket ">Buy Tickets</button>
+                            </div>
                         </div>
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
+                       
+                        <div class="col col-third place-item">
+                            <img src="./assets/img/places/paris.jpg" alt="newyork" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket  ">Buy Tickets</button>
+                            </div>
+                        </div>
+                        
+                        <div class="col col-third place-item">
+                            <img src="./assets/img/places/sanfran.jpg" alt="newyork" class="place-img">
+                            <div class="place-body">
+                            <h3 class="place-heading">San Francisco</h3>
+                            <p class="place-time">Sun 29 Nov 2016</p>
                             <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy Tickets</a>
+                            <button class="place-buy-btn  js-buy-ticket ">Buy Tickets</button>
+                            </div>
                         </div>
-                        <div class="place-item">
-                            <img src="./assets/img/places/newyork.jpg" alt="newyork" class="place-img">
-                        </div>
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy Tickets</a>
-                        </div>
-                        <div class="place-item">
-                            <img src="./assets/img/places/newyork.jpg" alt="newyork" class="place-img">
-                        </div>
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-buy-btn">Buy Tickets</a>
-                        </div>
+                        <div class="clear"></div>
+                        
                     </div>
                 </div>
 
@@ -124,6 +128,35 @@
             <div class="content-session">
                 <h2 class="session-heading">CONTACT</h2>
                 <P class="session-sub-heading">Fan? Drop a note!</P>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"> </i>Email: mail@mail.com</p>
+
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Email" id="" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -131,5 +164,72 @@
 
         </div>
     </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+           <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <div class="modal-header">
+                <i class="ti-bag modal-heading-icon"></i>
+                Tickets
+            </div>
+
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="quantity" type="text" class="modal-input" placeholder="How money?">
+                <label for="email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input id="email" type="email" class="modal-input" placeholder="Enter email...">
+                <button id="buy-ticket">
+                    Pay <i class="ti-check"></i>
+                   
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+
+        </div>
+    </div>
+    <!-- js modal buy ticket -->
+    <script>
+        const buyBTNs = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        // hàm hiển thị modal mua vé (thêm class open vao modal)
+        function showBuyTicket(){
+            modal.classList.add('open')
+        }
+
+        // hàm ẩn modal mua vé (thêm class close vao modal)
+        function closeBuyTicket(){
+            modal.classList.remove('open')
+        }
+
+        // lặp qua từng thể button và  nghe hành vi click 
+        for(const buyBTN of buyBTNs){
+            // listen a action of client
+            buyBTN.addEventListener('click',showBuyTicket)
+        }
+
+        // nghe hành vi click vào nút button close
+        modalClose.addEventListener('click',closeBuyTicket)
+
+        modal.addEventListener('click',closeBuyTicket)
+
+        modalContainer.addEventListener('click',function(event){
+            event.stopPropagation
+        })
+    </script>
+
 </body>
 </html>
