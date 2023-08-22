@@ -36,10 +36,28 @@ nguyên tắc:
     text-align: center !important;
 }
 
+.mt-8{
+    margin-top: 8px  !important;
+}
+
+.mt-16{
+    margin-top: 16px  !important;
+}
+
+.pull-right{
+    float: right !important;
+}
+
 .row{
     margin-left: -8px;
     margin-right: -8px;
 
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col{
@@ -184,9 +202,10 @@ nguyên tắc:
 
 #content .content-session{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 #content .session-heading{
@@ -266,9 +285,7 @@ nguyên tắc:
 
 /* Places */
 .place-list{
-   
    margin-top: 32px;
-   margin-bottom: 48px;
 }
 
 .place-item{
@@ -306,16 +323,17 @@ nguyên tắc:
     line-height: 1.4;
 }
 
-.place-buy-btn{
+.btn{
     color: #fff;
     background-color: #000;
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
 }
 
-.place-buy-btn:hover {
+.btn:hover {
     color: #000;
     background-color: #ccc;
     cursor: pointer;
@@ -454,10 +472,26 @@ nguyên tắc:
     width: 100%;
 }
 
-
-
-
+.map-session .map{
+    width: 100%;
+}
 
 #footer{
+    padding: 64px 16px;
+     text-align: center;
+}
+
+#footer .social-list{
+
+    font-size: 24px;
    
+}
+
+#footer .social-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+
+#footer .social-list a:hover{
+    opacity: 0.6;
 }
